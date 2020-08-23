@@ -1,25 +1,37 @@
+using System.Collections.Generic;
 using Interface;
+using Modelos;
 
 namespace Repositorio
 {
-    public class EnderecoRepositorio : IRepositorio<EnderecoRepositorio>
+    public class EnderecoRepositorio : IRepositorio<Endereco>
     {
-        public void Add(EnderecoRepositorio objeto)
+        private readonly IBancoDeDados bancoDeDados;
+        public EnderecoRepositorio(IBancoDeDados conexaoBancoDados)
+        {
+            bancoDeDados = conexaoBancoDados;
+        }
+        public void Add(Endereco objeto)
         {
             throw new System.NotImplementedException();
         }
 
-        public void List(EnderecoRepositorio objeto)
+        public List<Endereco> Listar(int id)
         {
             throw new System.NotImplementedException();
         }
 
-        public void Remove(EnderecoRepositorio objeto)
+        public List<Endereco> Listar()
         {
             throw new System.NotImplementedException();
         }
 
-        public void Update(EnderecoRepositorio objeto)
+        public void Remove(Endereco objeto)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Update(Endereco objeto)
         {
             throw new System.NotImplementedException();
         }

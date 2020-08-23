@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace Interface
 {
     public interface IRepositorio<T>
@@ -5,6 +7,7 @@ namespace Interface
         void Add(T objeto);
         void Update(T objeto);
         void Remove(T objeto);
-        void List(T objeto);
+        List<T> Listar(int id);
+        List<T> Listar();
     }
 }
