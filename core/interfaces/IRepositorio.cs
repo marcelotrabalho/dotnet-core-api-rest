@@ -7,7 +7,7 @@ namespace Interface
         void Add(T objeto);
         void Update(T objeto);
         void Remove(T objeto);
-        List<T> Listar(int id);
+        T Listar(int id);
         List<T> Listar();
     }
 }

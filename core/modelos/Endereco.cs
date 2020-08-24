@@ -10,7 +10,11 @@ namespace Modelos
         private string bairro;
         private string cidade;
         private string estado;
+        private Cliente cliente;
 
+        [Required]
+        public int Id {get => id; set => id = value;}
+        
         [Required]
         [StringLength(50)]
         public string Logradouro {get => logradouro;set => logradouro=value;}
@@ -31,6 +35,9 @@ namespace Modelos
         [StringLength(40)]
         public string Estado {get => estado;set => estado=value;}
 
+        [Required]
+        public Cliente Cliente {get=> cliente; set=> cliente=value;}
+        
     }
     
 }

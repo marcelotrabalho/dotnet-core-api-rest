@@ -4,9 +4,8 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Dao
 {
-    ///Esta classe é responsável por conectar no banco de dados Sql e executar uma instrução no     
-    ///Banco Sql Server
-    ///No futuro se precisar conectar em outro banco, só criar outra classe de conexão neste banco
+    ///Esta classe é responsável por conectar no banco de dados oracle e executar uma instrução no     
+    ///Banco oracle
     public class OracleConnection : Interface.IBancoDeDados
     {
 
@@ -14,7 +13,18 @@ namespace Dao
         {
             throw new System.NotImplementedException();   
         }
+
+        public void Conectar()
+        {
+            throw new System.NotImplementedException();
+        }
+
         public void Executar(string instrucaoSql)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void FecharConexao()
         {
             throw new System.NotImplementedException();
         }

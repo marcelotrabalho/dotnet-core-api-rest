@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Modelos
@@ -9,6 +10,9 @@ namespace Modelos
         private string nome;
         private string cpf;
         private DateTime nascimento;
+
+        private List<Endereco> enderecos;
+        
 
         [Required]
         public int Id { get => id; set => id = value; }
@@ -40,6 +44,7 @@ namespace Modelos
             
         }
 
+        public List<Endereco> Enderecos {get => enderecos; set => enderecos=value;}
     }
 
 }
